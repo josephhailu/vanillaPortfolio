@@ -1,0 +1,139 @@
+:root {
+    --main-content-col-width: 14%;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+
+/* nav */
+nav {
+    height: 85px;
+    background: #F9F9F9;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Joseph Hailu */
+.navBrand {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.245em;
+    margin-left: 18.4%;
+
+}
+
+/* navLinks */
+.navLinks {
+    margin-left: 35px;
+    min-width: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.navLinks li {
+    list-style: none;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+
+}
+
+
+/**********************/
+main {}
+
+.container {
+    width: 100%;
+}
+
+#heroContainer {
+    background-color: #E4E7F2;
+}
+
+
+.hero {
+    height: 46vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.heroText {
+    width: 508px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#headLine {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+
+    letter-spacing: 0.01em;
+}
+
+#heroSeparator {
+    margin: 14px 0px;
+    min-width: 508px;
+    border: 9px solid #9AD5CA;
+
+}
+
+.tagLine {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #5A887F;
+
+}
+
+
+.heroSvg {
+    width: 25%;
+}
+
+.projects {
+    width: 80%;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* See some of my work */
+.sectionHeadLine {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.01em;
+}
+
+.projectSeparator {
+    margin: 14px 0px;
+    min-width: 508px;
+    border: 9px solid #ADB9E3;
+}
+
+.backgroundSVG {
+    margin: 20% 0 0 0;
+    z-index: -1;
+}
+
+.backgroundSVG svg {
+    width: 100%;
+}
