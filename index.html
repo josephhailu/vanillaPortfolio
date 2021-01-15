@@ -5,24 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/media.css">
+
+
     <title>Joseph Hailu</title>
 </head>
 
 <body>
 
-
-    <nav>
+    <nav class="sticky">
         <div class="navBrand">Joseph Hailu</div>
 
         <ul class="navLinks">
             <li><a href="#">Home</a></li>
-            <li><a href="#project1">Projects</a></li>
+            <li><a href="#sectionTitle1">Projects</a></li>
             <li><a href="#aboutMe">About Me</a></li>
         </ul>
 
     </nav>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () {
+            myFunction()
+        };
 
-    <main>
+        // Get the header
+        var header = document.getElementById("myHeader");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <main class=" content">
         <div class="container" id="heroContainer">
             <div class="hero">
                 <div class="heroText">
@@ -2079,24 +2103,50 @@
         </div>
 
         <div class="container">
+            <div id="sectionTitle1" class="sectionTitle ">
+                <p class="sectionHeadLine">See some of my work.</p>
+                <div class="projectSeparator"></div>
+            </div>
             <div class="projects">
-                <div class="sectionTitle">
-                    <p class="sectionHeadLine">See some of my work.</p>
-                    <div class="projectSeparator"></div>
+                <div id="project1" class="project">
+                    <div class="projectVisual">
+                        <a href="#" target="blank">
+                            <img src="img/project1.gif" class="card-image" />
+                        </a>
+                    </div>
+                    <div class="projectInfo">
+                        <p class="projectTitle">Interactive Covid-19 heatmap of Canadian Provinces</p>
+                        <p class="projectDescription">
+                            A JavaScript visualization made with the d3.js library that allows users to choose a
+                            specific statistic and view the change over time by dragging a slider to a specific date.
+                            <br><br> Technologies used: JavaScript, d3.js, html, css
+                        </p>
+                    </div>
                 </div>
-
-                
-                <div class="projectContainer">
-
+                <div id="project2" class="project">
+                    <div class="projectInfo">
+                        <p class="projectTitle">Interactive map of Ontario Testing Centres</p>
+                        <p class="projectDescription">
+                            A JavaScript visualization made with the d3.js library that allows users to choose a
+                            specific statistic and view the change over time by dragging a slider to a specific date.
+                            <br><br> Technologies used: JavaScript, d3.js, html, css
+                        </p>
+                    </div>
+                    <div class="projectVisual">
+                        <a href="#" target="blank">
+                            <img src="img/project1.gif" class="card-image" />
+                        </a>
+                    </div>
                 </div>
+            </div>
+            <div id="sectionTitle2" class="sectionTitle">
+                <p class="sectionHeadLine">Who is Joseph Hailu?</p>
+                <div class="aboutSeparator"></div>
             </div>
         </div>
     </main>
 
     <footer></footer>
-
-    </div>
-
     <div class="backgroundSVG">
         <svg viewBox="0 0 1920 1464" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -2104,7 +2154,7 @@
                 fill="#9AD5CA" stroke="#9AD5CA" />
         </svg>
     </div>
-    <div class="backgroundSVG">
+    <div class="backgroundSVG" id="backgroundSVG2">
         <svg viewBox="0 0 1920 1011" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M1316.11 370.773C1609.84 336.766 1920 2 1920 2L1920 1011L0 1011V536.831C193.604 759.861 512.365 154.368 774.805 110.203C1037.25 66.0377 1022.38 404.779 1316.11 370.773Z"
