@@ -3,7 +3,9 @@
 }
 
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -14,40 +16,65 @@ body {
 }
 
 
-/* nav */
-nav {
+/* header */
+header {
     height: 85px;
     background: #F9F9F9;
+    width: auto;
+}
+
+.headerWrapper {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
 }
 
-
 /* Joseph Hailu */
-.navBrand {
+.headerBrand {
+    flex-grow: .057891;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.headerLogo {
+    margin-right: 5%;
+}
+
+.headerLogo svg {
+    width: 50px;
+}
+
+
+
+.headerText {
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    letter-spacing: 0.245em;
-    margin-left: 18.4%;
-
+    letter-spacing: 0.145em;
 }
 
 /* navLinks */
 .navLinks {
-    margin-left: 35px;
+    /* margin-left: 35px;
     min-width: 450px;
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; */
 
 }
 
 .navLinks li {
-    list-style: none;
+    /* list-style: none;
     font-size: 18px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em; */
 
 }
 
