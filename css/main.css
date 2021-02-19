@@ -33,31 +33,27 @@ header {
 
 /* Joseph Hailu */
 .headerBrand {
-    flex-grow: .057891;
+    flex-grow: .03457891;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
 
-
 }
 
-.headerLogo {
-    margin-right: 5%;
-}
+.headerLogo {}
 
 .headerLogo svg {
     width: 50px;
 }
-
-
 
 .headerText {
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.145em;
+
 }
 
 /* navLinks */
