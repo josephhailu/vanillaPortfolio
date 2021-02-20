@@ -2475,7 +2475,7 @@
                             .outerRadius(Math.min(width, height) / 2 - 1);
                         arcLabel = (d) => {
                             const radius = Math.min(width, height) / 2 * 0.8;
-                            return d3.arc().innerRadius(radius).outerRadius(radius);
+                            return d3.arc().innerRadius(radius).outerRadius(radius );
                         }
                         const color = d3.scaleOrdinal()
                             .domain(data.map(d => d.name))

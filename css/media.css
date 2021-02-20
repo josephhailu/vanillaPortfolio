@@ -2,15 +2,12 @@
  */
 @media only screen and (max-width:1000px) {
     .project {
-        background-color: lightblue;
         width: 100%;
         flex-wrap: wrap-reverse;
-
+        margin: 20% auto;
     }
 
-    .project .projectVisual {
-        text-align: center;
-    }
+    .project .projectVisual {}
 }
 
 @media only screen and (max-width:600px) {
