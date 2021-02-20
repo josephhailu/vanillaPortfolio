@@ -23,7 +23,7 @@ header {
     width: auto;
 }
 
-.headerWrapper {
+#headerWrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -74,53 +74,48 @@ header {
 
 /**********************/
 main {
-    width: 80%;
-    margin: auto;
-    padding: 85px 0 0 0;
+    padding-top: 85px;
+    width: 100%;
+    height: auto;
 }
 
 .container {
     width: 100%;
-
 }
 
 #heroContainer {
     background-color: #E4E7F2;
+    padding: 2% 0 2% 0;
 }
 
-
-.hero {
-    min-height: 30.4375vh;
+#heroWrapper {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
 }
 
 .heroText {
-    width: 508px;
     display: flex;
     flex-direction: column;
+    max-width: 40%;
 }
 
 #headLine {
     font-weight: bold;
-    font-size: 64px;
-    line-height: 75px;
-
+    font-size: calc(12px + 3vw);
+    line-height: calc(12px + 3vw);
     letter-spacing: 0.01em;
 }
 
+
 #heroSeparator {
-    margin: 14px 0px;
-    max-width: 508px;
+    margin: calc(12px + 1vw) 0px;
     border: 9px solid #9AD5CA;
 
 }
 
 .tagLine {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: calc(12px + 1vw);
     letter-spacing: 0.01em;
     color: #5A887F;
 
@@ -129,7 +124,7 @@ main {
 
 .heroSvg {
     width: 25%;
-    max-width: 623px;
+
 }
 
 .projects {
