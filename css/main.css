@@ -21,6 +21,8 @@ header {
     height: 85px;
     background: #F9F9F9;
     width: auto;
+    position: relative;
+    z-index: 200;
 }
 
 #headerWrapper {
@@ -81,6 +83,7 @@ main {
 
 .container {
     width: 100%;
+    position: relative;
 }
 
 #heroContainer {
@@ -121,11 +124,12 @@ main {
 
 }
 
-
 .heroSvg {
     width: 25%;
 
 }
+
+#projectContainer {}
 
 .projects {
     max-width: 80%;
@@ -145,12 +149,10 @@ main {
 
 .sectionTitle {
     margin: 15vh auto 0 auto;
+    width: 100%;
 }
 
-#sectionTitle2 {
-    float: right;
 
-}
 
 
 .projectSeparator {
@@ -167,16 +169,11 @@ main {
 
 }
 
-
 .project {
     margin: 100px auto 0 auto;
     display: flex;
     flex-direction: row;
-
 }
-
-
-
 
 .projectVisual,
 .projectInfo {
@@ -191,8 +188,6 @@ main {
 
 }
 
-
-
 .projectTitle {
     font-size: 36px;
     line-height: 42px;
@@ -205,17 +200,10 @@ main {
     font-size: 24px;
     line-height: 40px;
     letter-spacing: 0.01em;
-
-
-
 }
 
 
-
-
 .projects:nth-child(odd) {}
-
-
 
 
 .aboutSeparator {
@@ -224,20 +212,29 @@ main {
     border: 9px solid #9AD5CA;
 }
 
+.timeline {
+    margin-top: 2%;
+}
+
 .backgroundSVG {
-    z-index: -1;
+    z-index: -10;
+    position: absolute;
+    width: 100%;
+}
+
+.backgroundSVG svg {
+    width: 100%;
 }
 
 .backgroundSVG:nth-child(odd) {
-    width: 100%;
+    /* width: 100%;
     position: absolute;
     top: 900px;
-    z-index: -1;
+    z-index: -1; */
 }
 
 .backgroundSVG:nth-child(even) {
-    width: 100%;
+    /* width: 100%;
     position: absolute;
-
-    z-index: -1;
+    z-index: -1; */
 }
