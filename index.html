@@ -9,23 +9,13 @@
     <link rel="stylesheet" href="css/media.css">
     <script src="//d3js.org/d3.v6.min.js"></script>
 
-    <style>
-        .axis text {
-            font: 10px sans-serif;
-        }
-
-        .axis path,
-        .axis line {
-            fill: none;
-            stroke: #000;
-            shape-rendering: crispEdges;
-        }
-    </style>
-
     <title>Joseph Hailu</title>
 </head>
 
 <body>
+    <!-- <div class="underConstruction">
+        Currently Under Construction
+    </div> -->
     <header class="sticky" id="">
         <div class="wrapper" id="headerWrapper">
             <div class="headerBrand">
@@ -2386,7 +2376,7 @@
                 <div class="projects">
                     <div id="project1" class="project">
                         <div class="projectVisual">
-                            <a href="#" target="blank">
+                            <a href="https://observablehq.com/@josephhailu/total_stats_c-19_can/3" target="blank">
                                 <img src="img/project1.gif" class="card-image" />
                             </a>
                         </div>
@@ -2475,7 +2465,7 @@
                             .outerRadius(Math.min(width, height) / 2 - 1);
                         arcLabel = (d) => {
                             const radius = Math.min(width, height) / 2 * 0.8;
-                            return d3.arc().innerRadius(radius).outerRadius(radius );
+                            return d3.arc().innerRadius(radius).outerRadius(radius);
                         }
                         const color = d3.scaleOrdinal()
                             .domain(data.map(d => d.name))
