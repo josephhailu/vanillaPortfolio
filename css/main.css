@@ -7,6 +7,8 @@
 
 
     --h1-letter-spacing: calc(12px + 3vw);
+    --h2-letter-spacing: calc(12px + 2vw);
+    --h3-letter-spacing: calc(12px + 1vw);
 
 }
 
@@ -197,8 +199,8 @@ main {
 }
 
 .projectTitle {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: var(--h2-font-size);
+    line-height: var(--h1-letter-spacing);
     letter-spacing: 0.01em;
 }
 
@@ -216,7 +218,7 @@ main {
 
 .aboutSeparator {
     margin: 14px 0px;
-    width: 508px;
+    width: auto;
     border: 9px solid #9AD5CA;
 }
 
