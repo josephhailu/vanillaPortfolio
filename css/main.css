@@ -143,6 +143,65 @@ main {
     width: 45%;
 }
 
+#ew4q4dvstlqb12 {
+    animation: appear 1s linear;
+    animation-fill-mode: forwards;
+}
+
+#ew4q4dvstlqb28 {
+    animation: appear 1s linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#ew4q4dvstlqb21 {
+    animation: appear .5s linear;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#ew4q4dvstlqb166 {
+    animation: slideRight .7s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(87);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.fanBlades {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: rotate 1.7s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0.5turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
 #projectContainer,
 #aboutContainer {
     margin-top: 10%;
