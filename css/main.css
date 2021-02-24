@@ -4,6 +4,7 @@
     --h2-font-size: calc(12px + 2vw);
     --h3-font-size: calc(12px + 1vw);
     --h4-font-size: calc(12px + 0.5vw);
+    --h5-font-size: calc(2px + 0.5vw);
 
 
     --h1-letter-spacing: calc(12px + 3vw);
@@ -167,10 +168,10 @@ main {
     width: auto;
 }
 
-.projectSeparator {
-    margin: 14px 0px;
-    width: auto;
-    border: 9px solid #ADB9E3;
+#projectSeparator {
+    margin: var(--h5-font-size) 0px;
+    border: var(--h5-font-size) solid #ADB9E3;
+    background-color: #ADB9E3;
 }
 
 
@@ -218,10 +219,10 @@ main {
 .projects:nth-child(odd) {}
 
 
-.aboutSeparator {
-    margin: 14px 0px;
-    width: auto;
-    border: 9px solid #9AD5CA;
+#aboutSeparator {
+    margin: var(--h5-font-size) 0px;
+    border: var(--h5-font-size) solid #9AD5CA;
+    background-color: #9AD5CA;
 }
 
 .timeline {
